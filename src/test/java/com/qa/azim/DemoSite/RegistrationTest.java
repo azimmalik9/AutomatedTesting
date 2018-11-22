@@ -21,7 +21,7 @@ public class RegistrationTest {
 	
 	@Before
 	public void setup() {
-		//create Driver object for Chrome browser
+
 		System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
 		
 		driver = new ChromeDriver();		
@@ -50,9 +50,9 @@ public class RegistrationTest {
 		
 		successPage.clickLink();
 
-		LoginPage signInPage = PageFactory.initElements(driver, LoginPage.class);
+		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		test.log(LogStatus.INFO, "Attempting to sign in with new credentials");
-		signInPage.enterDetails(action);
+		loginPage.enterDetails(action);
 		
 		report.endTest(test);
 		report.flush();

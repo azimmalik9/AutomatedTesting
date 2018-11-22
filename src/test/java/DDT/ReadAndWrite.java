@@ -25,7 +25,7 @@ public class ReadAndWrite {
 	
 	@Before
 	public void setup() {
-		ExcelUtils.setExcelFile(Constants.pathTestData + Constants.fileTestData, 0);
+		ExcelUtils.setExcelFile(Constants.pathTestData + Constants.DDTFileTestData, 0);
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
 		driver = new ChromeDriver();

@@ -10,5 +10,6 @@ public class Constants {
 	public static final String pathTestData = "C:\\Users\\Azim\\eclipse-workspace\\DemoSite\\src\\testData\\";
 
 	public static final String fileTestData = "TestData.xlsx";
+	public static final String DDTFileTestData = "DemoSiteDDT.xlsx";
  
 }
